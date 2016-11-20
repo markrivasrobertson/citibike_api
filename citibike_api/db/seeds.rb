@@ -7,7 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require "csv"
 
-CSV.foreach("../lib/assets/ride_data.csv", headers: true) do |row|
+CSV.foreach("./lib/assets/ride_data.csv", headers: true) do |row|
   Day.create(date: row["date"], daily_rides: row["daily_rides"], total_rides: row["total_rides"])
 end
-  
