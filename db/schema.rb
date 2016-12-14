@@ -15,12 +15,4 @@ ActiveRecord::Schema.define(version: 20161120132609) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "days", force: :cascade do |t|
-    t.string   "date"
-    t.integer  "daily_rides"
-    t.integer  "total_rides"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
 end
