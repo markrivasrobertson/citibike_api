@@ -14,15 +14,15 @@ class DaysController < ApplicationController
   end
 
   # POST /days
-  # def create
-  #   @day = Day.new(day_params)
-  #
-  #   if @day.save
-  #     render json: @day, status: :created, location: @day
-  #   else
-  #     render json: @day.errors, status: :unprocessable_entity
-  #   end
-  # end
+  def create
+    @day = Day.new(day_params)
+
+    if @day.save
+      render json: @day, status: :created, location: @day
+    else
+      render json: @day.errors, status: :unprocessable_entity
+    end
+  end
   #
   # # PATCH/PUT /days/1
   # def update
