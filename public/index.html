@@ -5,11 +5,14 @@
     <title>Citibike Data API</title>
     <style>
       * {
-        background-color: lightblue;
+        background-color: silver;
       }
     </style>
   </head>
   <body>
     <h1>Citibike Data API</h1>
+    <p>This API sends down data as JSON for the daily ridership data from New York's Citibike program.  You can get the total rides for the whole program since it first began, and the rides for the day you are seeking.  Currently, the API provides all data currently available for the current year.  To get the JSON, send the query to the following address</p>
+    <p>https://citibike-api.herokuapp.com/days/:id</p>
+    <p>The id number should be the day of the year you want.  Jan 1, is 1, Feb 1 is 32, and so on.</p>
   </body>
 </html>
